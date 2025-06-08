@@ -18,12 +18,17 @@ and overall banking operations.
 
 ## 📁 Project Structure
 
-Banking-Data-Analysis/
+### Banking-Data-Analysis/
 ├── data/ # Contains raw & cleaned datasets
+
 ├── notebooks/ # Jupyter notebooks for EDA and SQL integration
+
 ├── sql/ # SQL query scripts
+
 ├── powerbi/ # Power BI dashboard files (.pbix)
+
 ├── reports/ # Exported analysis reports (optional)
+
 └── README.md # Project documentation
 
 
@@ -40,6 +45,13 @@ Banking-Data-Analysis/
 
 ---
 
+## 📊 Power BI Dashboard
+- An interactive dashboard was created to help stakeholders:
+- Monitor key KPIs such as loan approval rates, customer growth, and branch performance.
+- Identify customer churn or fraud patterns.
+- Understand product-wise and region-wise insights.
+
+
 ## 🔗 SQL-Python Integration
 
 We used `pandas` along with `pyodbc` to run complex SQL queries directly within Python, 
@@ -52,3 +64,6 @@ import pyodbc
 conn = pyodbc.connect('DRIVER={SQL Server};SERVER=your_server;DATABASE=your_db;UID=user;PWD=password')
 query = "SELECT * FROM customer_data"
 df = pd.read_sql(query, conn)
+
+
+
